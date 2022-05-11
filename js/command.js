@@ -26,7 +26,7 @@ function setLocation(locationValue) {
 function addTextOndescription() {
   let item = Office.context.mailbox.item;
   let body =
-    "<p style='background-color:lightgray'><br><br>___________________________________________________________________ <br>" +
+    "<p style='background-color:lightgray;font-size:14'><br><br>___________________________________________________________________ <br>" +
     "Cool! You are invited to an audio-only, hands-free, walking meeting via <a href='http://feeting.app/'>feeting.app</a>" +
     " At the given moment, just put in a pair of airbuds or headphones and, from your phone. " +
     "Press the link and follow the flow, you'll automatically be taken to your feeting. " +

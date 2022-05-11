@@ -10,7 +10,7 @@ xmlns:mailappor="http://schemas.microsoft.com/office/mailappversionoverrides/1.0
   <ProviderName>Feeting.app</ProviderName>
   <DefaultLocale>en-US</DefaultLocale>
   <DisplayName DefaultValue="Feeting scheduler for Outlook"/>
-  <Description DefaultValue="With the Feeting scheduler for Outlook, it is even easier to invite someone for a walking meeting. Simply add your personal invite link once and invite colleagues with one click on the button. It will automatically add your personal link in the location field and generate a simple explanation for your invitees in the description field. They can simply click the link, and feeting takes care of the rest, regardless of device or platform.  Feeting, your #1 walking meeting platform. 🚶👣 🤙"/>
+  <Description DefaultValue="With the Feeting scheduler for Outlook, it is even easier to invite someone for a walking meeting."/>
   <IconUrl DefaultValue="https://extraordinary-tarsier-88f918.netlify.app/assets/icon-64.png"/>
   <HighResolutionIconUrl DefaultValue="https://extraordinary-tarsier-88f918.netlify.app/assets/icon-128.png"/>
   <SupportUrl DefaultValue="https://extraordinary-tarsier-88f918.netlify.app"/>
@@ -32,7 +32,7 @@ xmlns:mailappor="http://schemas.microsoft.com/office/mailappversionoverrides/1.0
              on the ribbon in clients that support add-in commands. You can
              use a completely different page if desired -->
         <SourceLocation DefaultValue="https://extraordinary-tarsier-88f918.netlify.app/takspanel.html"/>
-        <RequestedHeight>250</RequestedHeight>
+        <RequestedHeight>450</RequestedHeight>
       </DesktopSettings>
     </Form>
     <Form xsi:type="ItemEdit">
@@ -74,10 +74,10 @@ xmlns:mailappor="http://schemas.microsoft.com/office/mailappversionoverrides/1.0
                   </Icon>
                   <Items>
                     <Item id="msgReadMenuItem1">
-                      <Label resid="menuItem1ReadLabel" />
+                      <Label resid="FeetingLabel" />
                       <Supertip>
-                        <Title resid="menuItem1ReadLabel" />
-                        <Description resid="menuItem1ReadTip" />
+                        <Title resid="FeetingLabel" />
+                        <Description resid="FeetingLabelTip" />
                       </Supertip>
                       <Icon>
                        <bt:Image size="16" resid="Icon.16x16" />
@@ -89,10 +89,10 @@ xmlns:mailappor="http://schemas.microsoft.com/office/mailappversionoverrides/1.0
                       </Action>
                     </Item>
                     <Item id="msgReadMenuItem2">
-                      <Label resid="menuItem2ReadLabel" />
+                      <Label resid="SettingLabel" />
                       <Supertip>
-                        <Title resid="menuItem2ReadLabel" />
-                        <Description resid="menuItem2ReadTip" />
+                        <Title resid="SettingLabel" />
+                        <Description resid="SettingLabelTip" />
                       </Supertip>
                       <Icon>
                         <bt:Image size="16" resid="Icon.16x16" />
@@ -125,16 +125,16 @@ xmlns:mailappor="http://schemas.microsoft.com/office/mailappversionoverrides/1.0
       <bt:ShortStrings>
         <bt:String id="GroupLabel" DefaultValue="Feeting Add-in"/>
         <bt:String id="TaskpaneButton.Label" DefaultValue="Feeting app"/>    
-         <bt:String id="menuItem1ReadLabel" DefaultValue="Make it a feeting"/>
-         <bt:String id="menuItem2ReadLabel" DefaultValue="Settings"/>  
+         <bt:String id="FeetingLabel" DefaultValue="Make it a feeting"/>
+         <bt:String id="SettingLabel" DefaultValue="Settings"/>  
           <bt:String id="menuReadSuperTipTitle" DefaultValue="Feeting app"/>           
             <bt:String id="menuReadButtonLabel" DefaultValue="Feeting"/>   
       </bt:ShortStrings>
       <bt:LongStrings>
         <bt:String id="TaskpaneButton.Tooltip" DefaultValue="Feeting scheduler for Outlook"/>   
         <bt:String id="menuReadSuperTipDescription" DefaultValue="Feeting scheduler for Outlook"/>    
-         <bt:String id="menuItem2ReadTip" DefaultValue="Click to configure feeting"/>     
-        <bt:String id="menuItem1ReadTip" DefaultValue="Click to insert location"/>      
+         <bt:String id="SettingLabelTip" DefaultValue="Click to configure feeting"/>     
+        <bt:String id="FeetingLabelTip" DefaultValue="Click to insert location"/>      
       </bt:LongStrings>
     </Resources>    
   </VersionOverrides>
