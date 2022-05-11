@@ -11,11 +11,11 @@ xmlns:mailappor="http://schemas.microsoft.com/office/mailappversionoverrides/1.0
   <DefaultLocale>en-US</DefaultLocale>
   <DisplayName DefaultValue="Feeting app for Outlook"/>
   <Description DefaultValue="Your description"/>
-  <IconUrl DefaultValue="https://presentation.pitchflow.com/extensions/outlook_addin/assets/icon-64.png"/>
-  <HighResolutionIconUrl DefaultValue="https://presentation.pitchflow.com/extensions/outlook_addin/assets/icon-128.png"/>
+  <IconUrl DefaultValue="https://extraordinary-tarsier-88f918.netlify.app/assets/icon-64.png"/>
+  <HighResolutionIconUrl DefaultValue="https://extraordinary-tarsier-88f918.netlify.app/assets/icon-128.png"/>
   <SupportUrl DefaultValue="https://presentation.pitchflow.com"/>
   <AppDomains>
-     <AppDomain>https://presentation.pitchflow.com</AppDomain>
+     <AppDomain>https://extraordinary-tarsier-88f918.netlify.app</AppDomain>
   </AppDomains>
   <Hosts>
     <Host Name="Mailbox"/>
@@ -114,9 +114,9 @@ xmlns:mailappor="http://schemas.microsoft.com/office/mailappversionoverrides/1.0
     </Hosts>
     <Resources>
       <bt:Images>
-        <bt:Image id="Icon.16x16" DefaultValue="https://presentation.pitchflow.com/extensions/outlook_addin/assets/icon-16.png"/>
-        <bt:Image id="Icon.32x32" DefaultValue="https://presentation.pitchflow.com/extensions/outlook_addin/assets/icon-32.png"/>
-        <bt:Image id="Icon.80x80" DefaultValue="https://presentation.pitchflow.com/extensions/outlook_addin/assets/icon-80.png"/>
+        <bt:Image id="Icon.16x16" DefaultValue="https://extraordinary-tarsier-88f918.netlify.app/assets/icon-16.png"/>
+        <bt:Image id="Icon.32x32" DefaultValue="https://extraordinary-tarsier-88f918.netlify.app/assets/icon-32.png"/>
+        <bt:Image id="Icon.80x80" DefaultValue="https://extraordinary-tarsier-88f918.netlify.app/assets/icon-80.png"/>
       </bt:Images>
       <bt:Urls>
         <bt:Url id="Commands.Url" DefaultValue="https://extraordinary-tarsier-88f918.netlify.app/commands.html"/>
