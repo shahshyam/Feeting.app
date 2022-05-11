@@ -7,10 +7,10 @@ xmlns:mailappor="http://schemas.microsoft.com/office/mailappversionoverrides/1.0
  xsi:type="MailApp">
   <Id>54dc8d32-0541-4525-afed-f12025cc8eff</Id>
   <Version>1.0.0.0</Version>
-  <ProviderName>Pitchflow</ProviderName>
+  <ProviderName>Feeting.app</ProviderName>
   <DefaultLocale>en-US</DefaultLocale>
-  <DisplayName DefaultValue="Feeting app for Outlook"/>
-  <Description DefaultValue="Your description"/>
+  <DisplayName DefaultValue="Feeting scheduler for Outlook"/>
+  <Description DefaultValue="With the Feeting scheduler for Outlook, it is even easier to invite someone for a walking meeting. Simply add your personal invite link once and invite colleagues with one click on the button. It will automatically add your personal link in the location field and generate a simple explanation for your invitees in the description field. They can simply click the link, and feeting takes care of the rest, regardless of device or platform.  Feeting, your #1 walking meeting platform. 🚶👣 🤙"/>
   <IconUrl DefaultValue="https://extraordinary-tarsier-88f918.netlify.app/assets/icon-64.png"/>
   <HighResolutionIconUrl DefaultValue="https://extraordinary-tarsier-88f918.netlify.app/assets/icon-128.png"/>
   <SupportUrl DefaultValue="https://presentation.pitchflow.com"/>
@@ -125,16 +125,16 @@ xmlns:mailappor="http://schemas.microsoft.com/office/mailappversionoverrides/1.0
       <bt:ShortStrings>
         <bt:String id="GroupLabel" DefaultValue="Feeting Add-in"/>
         <bt:String id="TaskpaneButton.Label" DefaultValue="Feeting app"/>    
-         <bt:String id="menuItem1ReadLabel" DefaultValue="Settings"/>
-         <bt:String id="menuItem2ReadLabel" DefaultValue="Add Location"/>  
+         <bt:String id="menuItem1ReadLabel" DefaultValue="Make it a feeting"/>
+         <bt:String id="menuItem2ReadLabel" DefaultValue="Settings"/>  
           <bt:String id="menuReadSuperTipTitle" DefaultValue="Feeting app"/>           
-            <bt:String id="menuReadButtonLabel" DefaultValue="Configure me"/>   
+            <bt:String id="menuReadButtonLabel" DefaultValue="Feeting"/>   
       </bt:ShortStrings>
       <bt:LongStrings>
-        <bt:String id="TaskpaneButton.Tooltip" DefaultValue="Feeting app for outlook"/>   
-        <bt:String id="menuReadSuperTipDescription" DefaultValue="detail will provide"/>    
-         <bt:String id="menuItem2ReadTip" DefaultValue="detail will provide"/>     
-        <bt:String id="menuItem1ReadTip" DefaultValue="detail will provide"/>      
+        <bt:String id="TaskpaneButton.Tooltip" DefaultValue="Feeting scheduler for Outlook"/>   
+        <bt:String id="menuReadSuperTipDescription" DefaultValue="Feeting scheduler for Outlook"/>    
+         <bt:String id="menuItem2ReadTip" DefaultValue="Click to configure feeting"/>     
+        <bt:String id="menuItem1ReadTip" DefaultValue="Click to insert location"/>      
       </bt:LongStrings>
     </Resources>    
   </VersionOverrides>
