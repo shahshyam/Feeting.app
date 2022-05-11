@@ -13,7 +13,7 @@ xmlns:mailappor="http://schemas.microsoft.com/office/mailappversionoverrides/1.0
   <Description DefaultValue="With the Feeting scheduler for Outlook, it is even easier to invite someone for a walking meeting. Simply add your personal invite link once and invite colleagues with one click on the button. It will automatically add your personal link in the location field and generate a simple explanation for your invitees in the description field. They can simply click the link, and feeting takes care of the rest, regardless of device or platform.  Feeting, your #1 walking meeting platform. 🚶👣 🤙"/>
   <IconUrl DefaultValue="https://extraordinary-tarsier-88f918.netlify.app/assets/icon-64.png"/>
   <HighResolutionIconUrl DefaultValue="https://extraordinary-tarsier-88f918.netlify.app/assets/icon-128.png"/>
-  <SupportUrl DefaultValue="https://presentation.pitchflow.com"/>
+  <SupportUrl DefaultValue="https://extraordinary-tarsier-88f918.netlify.app"/>
   <AppDomains>
      <AppDomain>https://extraordinary-tarsier-88f918.netlify.app</AppDomain>
   </AppDomains>
