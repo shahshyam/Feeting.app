@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<OfficeApp 
+xmlns="http://schemas.microsoft.com/office/appforoffice/1.1" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xmlns:bt="http://schemas.microsoft.com/office/officeappbasictypes/1.0" 
+xmlns:mailappor="http://schemas.microsoft.com/office/mailappversionoverrides/1.0"
+ xsi:type="MailApp">
+  <Id>54dc8d32-0541-4525-afed-f12025cc8eff</Id>
+  <Version>1.0.0.0</Version>
+  <ProviderName>Pitchflow</ProviderName>
+  <DefaultLocale>en-US</DefaultLocale>
+  <DisplayName DefaultValue="Feeting app for Outlook"/>
+  <Description DefaultValue="Your description"/>
+  <IconUrl DefaultValue="https://presentation.pitchflow.com/extensions/outlook_addin/assets/icon-64.png"/>
+  <HighResolutionIconUrl DefaultValue="https://presentation.pitchflow.com/extensions/outlook_addin/assets/icon-128.png"/>
+  <SupportUrl DefaultValue="https://presentation.pitchflow.com"/>
+  <AppDomains>
+     <AppDomain>https://presentation.pitchflow.com</AppDomain>
+  </AppDomains>
+  <Hosts>
+    <Host Name="Mailbox"/>
+  </Hosts>
+  <Requirements>
+    <Sets>
+      <Set Name="Mailbox" MinVersion="1.1"/>
+    </Sets>
+  </Requirements>
+  <FormSettings>
+  <Form xsi:type="ItemRead">
+      <DesktopSettings>
+        <!-- NOTE: Just reusing the read taskpane page that is invoked by the button
+             on the ribbon in clients that support add-in commands. You can
+             use a completely different page if desired -->
+        <SourceLocation DefaultValue="https://extraordinary-tarsier-88f918.netlify.app/takspanel.html"/>
+        <RequestedHeight>250</RequestedHeight>
+      </DesktopSettings>
+    </Form>
+    <Form xsi:type="ItemEdit">
+      <DesktopSettings>
+        <SourceLocation DefaultValue="https://extraordinary-tarsier-88f918.netlify.app/takspanel.html"/>       
+      </DesktopSettings>
+    </Form>
+  </FormSettings>
+  <Permissions>ReadWriteItem</Permissions>
+  <Rule xsi:type="RuleCollection" Mode="Or">
+    <Rule xsi:type="ItemIs" ItemType="Appointment" FormType="Read" />
+    <Rule xsi:type="ItemIs" ItemType="Appointment" FormType="Edit"/>
+  </Rule>
+  <DisableEntityHighlighting>false</DisableEntityHighlighting>
+  <VersionOverrides xmlns="http://schemas.microsoft.com/office/mailappversionoverrides" xsi:type="VersionOverridesV1_0">
+    <Requirements>
+      <bt:Sets DefaultMinVersion="1.5">
+        <bt:Set Name="Mailbox"/>
+      </bt:Sets>
+    </Requirements>
+    <Hosts>
+      <Host xsi:type="MailHost">
+        <DesktopFormFactor>
+          <FunctionFile resid="Commands.Url"/>
+          <ExtensionPoint xsi:type="AppointmentOrganizerCommandSurface">
+            <OfficeTab id="TabDefault">
+              <Control xsi:type="Menu" id="msgReadMenuButton">
+                  <Label resid="menuReadButtonLabel" />
+                  <Supertip>
+                    <Title resid="menuReadSuperTipTitle" />
+                    <Description resid="menuReadSuperTipDescription" />
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="red-icon-16" />
+                    <bt:Image size="32" resid="red-icon-32" />
+                    <bt:Image size="80" resid="red-icon-80" />
+                  </Icon>
+                  <Items>
+                    <Item id="msgReadMenuItem1">
+                      <Label resid="menuItem1ReadLabel" />
+                      <Supertip>
+                        <Title resid="menuItem1ReadLabel" />
+                        <Description resid="menuItem1ReadTip" />
+                      </Supertip>
+                      <Icon>
+                       <bt:Image size="16" resid="Icon.16x16" />
+                        <bt:Image size="32" resid="Icon.32x32" />
+                        <bt:Image size="80" resid="Icon.80x80" />
+                      </Icon>
+                      <Action xsi:type="ShowTaskpane">
+                      <SourceLocation resid="readTaskPaneUrl" />
+                      </Action>
+                    </Item>
+                    <Item id="msgReadMenuItem2">
+                      <Label resid="menuItem2ReadLabel" />
+                      <Supertip>
+                        <Title resid="menuItem2ReadLabel" />
+                        <Description resid="menuItem2ReadTip" />
+                      </Supertip>
+                      <Icon>
+                        <bt:Image size="16" resid="Icon.16x16" />
+                        <bt:Image size="32" resid="Icon.32x32" />
+                        <bt:Image size="80" resid="Icon.80x80" />
+                      </Icon>
+                      <Action xsi:type="ExecuteFunction">
+                        <FunctionName>SetLogcation</FunctionName>
+                      </Action>
+                    </Item>
+                    </Items>
+                </Control>
+            </OfficeTab>
+          </ExtensionPoint>  
+      
+        </DesktopFormFactor>
+      </Host>
+    </Hosts>
+    <Resources>
+      <bt:Images>
+        <bt:Image id="Icon.16x16" DefaultValue="https://presentation.pitchflow.com/extensions/outlook_addin/assets/icon-16.png"/>
+        <bt:Image id="Icon.32x32" DefaultValue="https://presentation.pitchflow.com/extensions/outlook_addin/assets/icon-32.png"/>
+        <bt:Image id="Icon.80x80" DefaultValue="https://presentation.pitchflow.com/extensions/outlook_addin/assets/icon-80.png"/>
+      </bt:Images>
+      <bt:Urls>
+        <bt:Url id="Commands.Url" DefaultValue="https://extraordinary-tarsier-88f918.netlify.app/commands.html"/>
+        <bt:Url id="Taskpane.Url" DefaultValue="https://extraordinary-tarsier-88f918.netlify.app/takspanel.html"/>
+      </bt:Urls>
+      <bt:ShortStrings>
+        <bt:String id="GroupLabel" DefaultValue="Feeting Add-in"/>
+        <bt:String id="TaskpaneButton.Label" DefaultValue="Feeting app"/>    
+         <bt:String id="menuItem1ReadLabel" DefaultValue="Settings"/>
+         <bt:String id="menuItem2ReadLabel" DefaultValue="Add Location"/>  
+          <bt:String id="menuReadSuperTipTitle" DefaultValue="Feeting app"/> 
+           <bt:String id="menuReadSuperTipDescription" DefaultValue="detail will provide"/> 
+            <bt:String id="menuReadButtonLabel" DefaultValue="Configure me"/>   
+      </bt:ShortStrings>
+      <bt:LongStrings>
+        <bt:String id="TaskpaneButton.Tooltip" DefaultValue="Feeting app for outlook"/>        
+      </bt:LongStrings>
+    </Resources>    
+  </VersionOverrides>
+</OfficeApp>
