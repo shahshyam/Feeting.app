@@ -6,7 +6,7 @@ function SetLogcation(event) {
   } else {
     statusUpdate("errorMessage", "Please configure meeting link first");
   }
-  event.complete();
+  event.completed();
 }
 function setLocation(locationValue) {
   let item = Office.context.mailbox.item;
