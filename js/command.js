@@ -9,6 +9,7 @@ function SetLogcation(event) {
   event.complete();
 }
 function setLocation(locationValue) {
+  let item = Office.context.mailbox.item;
   item.location.setAsync(
     locationValue,
     { asyncContext: { var1: 1, var2: 2 } },
