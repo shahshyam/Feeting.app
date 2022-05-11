@@ -59,6 +59,8 @@ xmlns:mailappor="http://schemas.microsoft.com/office/mailappversionoverrides/1.0
           <FunctionFile resid="Commands.Url"/>
           <ExtensionPoint xsi:type="AppointmentOrganizerCommandSurface">
             <OfficeTab id="TabDefault">
+            <Group id="msgReadDemoGroup">
+                <Label resid="GroupLabel" />
               <Control xsi:type="Menu" id="msgReadMenuButton">
                   <Label resid="menuReadButtonLabel" />
                   <Supertip>
@@ -66,9 +68,9 @@ xmlns:mailappor="http://schemas.microsoft.com/office/mailappversionoverrides/1.0
                     <Description resid="menuReadSuperTipDescription" />
                   </Supertip>
                   <Icon>
-                    <bt:Image size="16" resid="red-icon-16" />
-                    <bt:Image size="32" resid="red-icon-32" />
-                    <bt:Image size="80" resid="red-icon-80" />
+                   <bt:Image size="16" resid="Icon.16x16" />
+                    <bt:Image size="32" resid="Icon.32x32" />
+                    <bt:Image size="80" resid="Icon.80x80" />
                   </Icon>
                   <Items>
                     <Item id="msgReadMenuItem1">
@@ -83,7 +85,7 @@ xmlns:mailappor="http://schemas.microsoft.com/office/mailappversionoverrides/1.0
                         <bt:Image size="80" resid="Icon.80x80" />
                       </Icon>
                       <Action xsi:type="ShowTaskpane">
-                      <SourceLocation resid="readTaskPaneUrl" />
+                      <SourceLocation resid="Taskpane.Url" />
                       </Action>
                     </Item>
                     <Item id="msgReadMenuItem2">
@@ -103,6 +105,7 @@ xmlns:mailappor="http://schemas.microsoft.com/office/mailappversionoverrides/1.0
                     </Item>
                     </Items>
                 </Control>
+                 </Group>
             </OfficeTab>
           </ExtensionPoint>  
       
@@ -124,12 +127,14 @@ xmlns:mailappor="http://schemas.microsoft.com/office/mailappversionoverrides/1.0
         <bt:String id="TaskpaneButton.Label" DefaultValue="Feeting app"/>    
          <bt:String id="menuItem1ReadLabel" DefaultValue="Settings"/>
          <bt:String id="menuItem2ReadLabel" DefaultValue="Add Location"/>  
-          <bt:String id="menuReadSuperTipTitle" DefaultValue="Feeting app"/> 
-           <bt:String id="menuReadSuperTipDescription" DefaultValue="detail will provide"/> 
+          <bt:String id="menuReadSuperTipTitle" DefaultValue="Feeting app"/>           
             <bt:String id="menuReadButtonLabel" DefaultValue="Configure me"/>   
       </bt:ShortStrings>
       <bt:LongStrings>
-        <bt:String id="TaskpaneButton.Tooltip" DefaultValue="Feeting app for outlook"/>        
+        <bt:String id="TaskpaneButton.Tooltip" DefaultValue="Feeting app for outlook"/>   
+        <bt:String id="menuReadSuperTipDescription" DefaultValue="detail will provide"/>    
+         <bt:String id="menuItem2ReadTip" DefaultValue="detail will provide"/>     
+        <bt:String id="menuItem1ReadTip" DefaultValue="detail will provide"/>      
       </bt:LongStrings>
     </Resources>    
   </VersionOverrides>
