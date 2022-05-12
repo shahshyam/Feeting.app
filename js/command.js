@@ -78,7 +78,7 @@ function addTextOndescription() {
 function statusUpdate(actionType, text) {
   Office.context.mailbox.item.notificationMessages.replaceAsync("status", {
     type: actionType,
-    //icon: icon,
+    icon: "Icon.80x80",
     message: text,
     persistent: false,
   });
