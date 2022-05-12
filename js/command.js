@@ -28,9 +28,9 @@ function addTextOndescription() {
   let body =
     "<p><br/><br/>___________________________________________________________________ <br>" +
     "Cool! You are invited to an audio-only, hands-free, walking meeting via <a href='http://feeting.app/'>feeting.app</a>." +
-    "<br/>At the given moment, just put in a pair of airbuds or headphones and, from your phone. " +
+    "<br/>At the given moment, just put in a pair of airbuds or headphones and, from your phone.<br/>" +
     "Press the link and follow the flow, you'll automatically be taken to your feeting. " +
-    "<br/><br/>No worries if you're not able to walk, you can join from your desktop as well. " +
+    "<br/><br/>No worries if you're not able to walk, you can join from your desktop as well.<br/>" +
     "Feeting is the #1 walking meeting platform 🚶👣 🤙 </p>";
   item.body.getTypeAsync(function (result) {
     if (result.status == Office.AsyncResultStatus.Succeeded) {
