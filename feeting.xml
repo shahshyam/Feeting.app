@@ -84,9 +84,10 @@ xmlns:mailappor="http://schemas.microsoft.com/office/mailappversionoverrides/1.0
                         <bt:Image size="32" resid="Icon.32x32" />
                         <bt:Image size="80" resid="Icon.80x80" />
                       </Icon>
-                      <Action xsi:type="ShowTaskpane">
-                      <SourceLocation resid="Taskpane.Url" />
+                      <Action xsi:type="ExecuteFunction">
+                        <FunctionName>SetLogcation</FunctionName>
                       </Action>
+                     
                     </Item>
                     <Item id="msgReadMenuItem2">
                       <Label resid="SettingLabel" />
@@ -99,8 +100,8 @@ xmlns:mailappor="http://schemas.microsoft.com/office/mailappversionoverrides/1.0
                         <bt:Image size="32" resid="Icon.32x32" />
                         <bt:Image size="80" resid="Icon.80x80" />
                       </Icon>
-                      <Action xsi:type="ExecuteFunction">
-                        <FunctionName>SetLogcation</FunctionName>
+                       <Action xsi:type="ShowTaskpane">
+                      <SourceLocation resid="Taskpane.Url" />
                       </Action>
                     </Item>
                     </Items>
