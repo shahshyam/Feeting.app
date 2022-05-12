@@ -1,6 +1,8 @@
 Office.initialize = function () {};
 function SetLogcation(event) {
-  let meetingLink = localStorage.getItem("meetngLink");
+  //let meetingLink = localStorage.getItem("meetngLink");
+  let settings = Office.context.roamingSettings;
+  let meetingLink = settings.get("meetngLink");
   if (meetingLink) {
     setLocation(meetingLink);
     addTextOndescription();
