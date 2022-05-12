@@ -35,7 +35,7 @@ function addTextOndescription() {
   item.body.getTypeAsync(function (result) {
     if (result.status == Office.AsyncResultStatus.Succeeded) {
       if (result.value == Office.MailboxEnums.BodyType.Html) {
-        item.body.setSelectedDataAsync(
+        item.body.prependAsync(
           body,
           {
             coercionType: Office.CoercionType.Html,
@@ -53,7 +53,7 @@ function addTextOndescription() {
           }
         );
       } else {
-        item.body.setSelectedDataAsync(
+        item.body.prependAsync(
           body,
           {
             coercionType: Office.CoercionType.Text,
